@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Letter for Baby 💌</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Georgia, serif;
+            text-align: center;
+            color: #8b3a62;
+            background: linear-gradient(135deg, #fff0f6, #ffe0ef, #f3e5ff);
+        }
+
+       
+
+        h1 {
+            font-size: 32px;
+            margin-top: 25px;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .envelope {
+            font-size: 65px;
+            margin: 20px;
+            animation: float 2s ease-in-out infinite;
+        }
+
+        .letter-card {
+            max-width: 650px;
+            margin: 25px auto;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.9);
+            border: 2px solid #ffc5df;
+            border-radius: 25px;
+            box-shadow: 0 8px 25px #e8a8c544;
+            text-align: left;
+            line-height: 1.9;
+        }
+
+        .letter-card h2 {
+            text-align: center;
+            color: #d85b91;
+        }
+
+        .letter-content {
+            display: none;
+            animation: fadeIn 1s ease;
+        }
+
+        .letter-content p {
+            font-size: 16px;
+        }
+
+        .open-button {
+            display: block;
+            margin: 20px auto;
+            padding: 13px 25px;
+            border: none;
+            border-radius: 30px;
+            background: linear-gradient(135deg, #ffafd1, #e4b5ff);
+            color: #7a3157;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 15px #e8a8c555;
+        }
+
+        .open-button:hover {
+            transform: scale(1.04);
+        }
+
+        .decoration {
+            text-align: center;
+            font-size: 23px;
+            margin: 15px 0;
+        }
+
+        .footer {
+            margin: 30px 0;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(12px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 26px;
+            }
+
+            .letter-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <h1>A Little Letter for You 💌</h1>
+
+    <p class="subtitle">
+        Written with love, wrapped in pink and sealed with a kiss of happiness. 🎀💗
+    </p>
+
+    <div class="envelope">💌</div>
+
+    <div class="letter-card">
+
+        <h2>To My Birthday Boy 🎂🧸</h2>
+
+        <div class="decoration">🌷 💕 ✨ 💕 🌷</div>
+
+        <button class="open-button" onclick="openLetter()">
+            Open Your Letter 💌
+        </button>
+
+        <div class="letter-content" id="letter-content">
+
+            <p>My Dearest Baby 💗🫶,</p>
+
+            <p>
+                First of all, <strong>HAPPY BIRTHDAY! 🎂🎉</strong>
+                Today is all about celebrating you, your smile,
+                your happiness and the wonderful person you are. 🌸✨
+            </p>
+
+            <p>
+                I made this little website especially for you because
+                I wanted to give you something personal and memorable.
+                Every page is a tiny piece of the love and happiness
+                I want to share with you. 🎀💌
+            </p>
+
+            <p>
+                Thank you for being a special part of my life.
+                I hope your days are filled with laughter 😂,
+                your heart is filled with happiness 🥹💗,
+                and your dreams bring you beautiful surprises. 🌈🦋
+            </p>
+
+            <p>
+                On your birthday, I wish you success in everything
+                you work towards, peaceful days, countless reasons
+                to smile and lots of wonderful memories. 🌟🎁
+            </p>
+
+            <p>
+                No matter how many birthdays come and go, I hope
+                we keep making beautiful memories, sharing silly
+                moments, laughing together and celebrating life's
+                little joys. 🧸💕
+            </p>
+
+            <p>
+                You deserve a day as lovely and special as you are.
+                So enjoy your cake 🍰, make a beautiful wish 🌠,
+                smile your biggest smile 😊 and remember that
+                someone made this little pink world just for you. 💗
+            </p>
+
+            <p>
+                <strong>Happy Birthday once again, Baby! 🎂💋</strong>
+            </p>
+
+            <p>
+                With lots of love, hugs and endless pink hearts,
+                <br>
+                <strong>Your favourite person 💌🎀💗</strong>
+            </p>
+
+            <div class="decoration">
+                💗 💖 💕 💞 💓 💗
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        Made with love, just for you, Baby. 🥹💗
+        <br>
+        Forever collecting beautiful memories. 🌷🫶
+    </div>
+
+    <script>
+        function openLetter() {
+            const letter = document.getElementById("letter-content");
+            const button = document.querySelector(".open-button");
+
+            if (letter.style.display === "block") {
+                letter.style.display = "none";
+                button.textContent = "Open Your Letter 💌";
+            } else {
+                letter.style.display = "block";
+                button.textContent = "Close Your Letter 💗";
+            }
+        }
+    </script>
+   <a href="surprise.html" target="page-frame"
+   style="display:inline-block;
+   margin:25px;
+   padding:15px 28px;
+   background:linear-gradient(135deg,#ff9fc8,#d9a7ff);
+   color:#7a3157;
+   text-decoration:none;
+   border-radius:30px;
+   font-weight:bold;
+   box-shadow:0 4px 15px #ffb6d566;">
+   🎂 Open Your Birthday Surprise 💖
+</a>
+</body>
+</html>

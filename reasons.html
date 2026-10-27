@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reasons I Love You 💗</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Georgia, serif;
+            text-align: center;
+            background: linear-gradient(135deg, #fff0f6, #ffe0ef, #f3e5ff);
+            color: #8b3a62;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #8b3a62;
+            background: white;
+            padding: 10px 14px;
+            border-radius: 20px;
+            box-shadow: 0 3px 10px #e8a8c533;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            background: #ffc7df;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-top: 30px;
+        }
+
+        .subtitle {
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        .reasons-container {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 18px;
+            max-width: 650px;
+            margin: 30px auto;
+        }
+
+        .reason-card {
+            background: rgba(255, 255, 255, 0.85);
+            border: 2px solid #ffd0e5;
+            border-radius: 22px;
+            padding: 22px 12px;
+            box-shadow: 0 5px 18px #e8a8c533;
+            cursor: pointer;
+            transition: transform 0.3s;
+            min-height: 130px;
+        }
+
+        .reason-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .heart {
+            font-size: 35px;
+        }
+
+        .reason-title {
+            font-size: 17px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .reason-message {
+            display: none;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-top: 12px;
+        }
+
+        .reason-card.open .reason-message {
+            display: block;
+        }
+
+        .footer {
+            margin-top: 35px;
+            font-size: 18px;
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 26px;
+            }
+
+            .reasons-container {
+                gap: 10px;
+            }
+
+            .reason-card {
+                padding: 18px 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+   
+
+    <h1>Reasons Why I Love You 💗</h1>
+
+    <p class="subtitle">
+        Hey Baby! 🎀<br>
+        There are so many reasons why you are special to me.<br>
+        Tap each heart to discover one! 💕
+    </p>
+
+    <div class="reasons-container">
+
+        <div class="reason-card" onclick="toggleReason(this)">
+            <div class="heart">💖</div>
+            <div class="reason-title">Your Smile</div>
+            <div class="reason-message">
+                Your smile makes even an ordinary day feel special. 🌸
+            </div>
+        </div>
+
+        <div class="reason-card" onclick="toggleReason(this)">
+            <div class="heart">🫶</div>
+            <div class="reason-title">Your Care</div>
+            <div class="reason-message">
+                I appreciate all the little ways you show that you care. 💗
+            </div>
+        </div>
+
+        <div class="reason-card" onclick="toggleReason(this)">
+            <div class="heart">🥹</div>
+            <div class="reason-title">Our Memories</div>
+            <div class="reason-message">
+                Every happy memory we share has a special place in my heart. 🎀
+            </div>
+        </div>
+
+        <div class="reason-card" onclick="toggleReason(this)">
+            <div class="heart">💌</div>
+            <div class="reason-title">Just Being You</div>
+            <div class="reason-message">
+                You are special to me simply because you are you. Happy Birthday, Baby! 💕
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        Made with lots of love, just for you 💗🎂
+    </div>
+
+    <script>
+        function toggleReason(card) {
+            card.classList.toggle("open");
+        }
+    </script>
+  <a href="letter.html" target="page-frame"
+   style="display:inline-block;
+   margin:25px;
+   padding:14px 24px;
+   background:linear-gradient(135deg,#ffb6d5,#e8b6ff);
+   color:#7a3157;
+   text-decoration:none;
+   border-radius:30px;
+   font-weight:bold;
+   box-shadow:0 4px 15px #ffb6d566;">
+   Open Your Love Letter 💌
+</a>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Birthday 💗</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fff0f6;
+        }
+
+        #music-bar {
+            position: fixed;
+            z-index: 99999;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            background: linear-gradient(135deg, #ffc1dc, #edc7ff);
+            box-shadow: 0 3px 12px #e9a6c880;
+        }
+
+        #music-toggle {
+            border: 2px solid white;
+            border-radius: 25px;
+            padding: 10px 18px;
+            background: #fff7fb;
+            color: #8d3766;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #page-frame {
+            position: fixed;
+            top: 58px;
+            left: 0;
+            width: 100%;
+            height: calc(100% - 58px);
+            border: none;
+            background: #fff0f6;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="music-bar">
+        <button id="music-toggle">🎵 Play Our Music 💗</button>
+        <audio id="background-music" loop preload="auto">
+            <source src="music/song.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <iframe id="page-frame" name="page-frame" src="index.html"></iframe>
+
+    <script>
+        const music = document.getElementById("background-music");
+        const button = document.getElementById("music-toggle");
+
+        button.addEventListener("click", async () => {
+            if (music.paused) {
+                try {
+                    await music.play();
+                    button.textContent = "🎶 Music On 💗";
+                } catch (error) {
+                    button.textContent = "🎵 Tap to Play Again";
+                }
+            } else {
+                music.pause();
+                button.textContent = "🎵 Play Our Music 💗";
+            }
+        });
+    </script>
+</body>
+</html>

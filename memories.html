@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Memories 💗</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Georgia, serif;
+            background: linear-gradient(135deg, #ffe4ef, #fff5f8, #f8d8f0);
+            color: #934568;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 18px 10px;
+            background: #fff8fb;
+            box-shadow: 0 3px 12px #b94d7615;
+        }
+
+        nav a {
+            color: #a64d76;
+            text-decoration: none;
+            padding: 10px 14px;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        nav a:hover,
+        nav a.active {
+            background: #f5c1d8;
+        }
+
+        header {
+            text-align: center;
+            padding: 35px 15px 20px;
+        }
+
+        header h1 {
+            font-size: clamp(32px, 7vw, 48px);
+        }
+
+        header p {
+            font-size: 17px;
+            line-height: 1.7;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 25px;
+            max-width: 850px;
+            margin: 20px auto;
+            padding: 15px;
+        }
+
+        .polaroid {
+            background: white;
+            padding: 12px 12px 20px;
+            border-radius: 5px;
+            box-shadow: 0 8px 20px #b94d7625;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .polaroid:nth-child(odd) {
+            transform: rotate(-2deg);
+        }
+
+        .polaroid:nth-child(even) {
+            transform: rotate(2deg);
+        }
+
+        .polaroid:hover {
+            transform: rotate(0deg) scale(1.04);
+        }
+
+        .polaroid img {
+            display: block;
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            background: #ffe4ef;
+            border-radius: 3px;
+        }
+
+        .polaroid p {
+            margin: 15px 0 0;
+            font-size: 17px;
+        }
+
+        .note {
+            text-align: center;
+            padding: 20px;
+            line-height: 1.8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 550px) {
+            .gallery {
+                grid-template-columns: 1fr;
+                max-width: 360px;
+            }
+
+            .polaroid img {
+                height: 280px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+   
+
+    <header>
+        <div style="font-size: 35px;">🎀 💗 🎀</div>
+
+        <h1>Our Little Memories</h1>
+
+        <p>
+            Every picture holds a little piece of our story, Baby. 💕
+        </p>
+    </header>
+
+    <main class="gallery">
+
+        <div class="polaroid">
+            <img src="photos/photo1.jpeg" alt="Our special memory 1">
+            <p>My favourite memory 💗</p>
+        </div>
+
+        <div class="polaroid">
+            <img src="photos/photo2.jpeg" alt="Our special memory 2">
+            <p>My happy place 🌷</p>
+        </div>
+
+        <div class="polaroid">
+            <img src="photos/photo3.jpeg" alt="Our special memory 3">
+            <p>Just you and me 🎀</p>
+        </div>
+
+        <div class="polaroid">
+            <img src="photos/photo4.jpeg" alt="Our special memory 4">
+            <p>Forever a favourite 💌</p>
+        </div>
+         <a href="story.html" target="page-frame"
+   style="display:inline-block;
+   margin-top:25px;
+   padding:14px 24px;
+   background:linear-gradient(135deg,#ffb6d5,#e8b6ff);
+   color:#7a3157;
+   text-decoration:none;
+   border-radius:30px;
+   font-weight:bold;
+   box-shadow:0 4px 15px #ffb6d566;">
+   Next: Our Story 💕
+</a>
+    </main>
+
+    <section class="note">
+        <h2>More Memories, More Love 💕</h2>
+        <p>And the best part of our story is still being written.</p>
+    </section>
+
+    <footer>
+        Made with love, just for Baby 💗
+    </footer>
+
+</body>
+</html>
